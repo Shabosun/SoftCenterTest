@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SoftCenterTest</string>
+    <string name="cooking_times">Время приготовления: %s</string>
+    <string name="description">Description</string>
+    <string name="calories">Calories: %s</string>
+    <string name="proteins">Proteins: %s</string>
+    <string name="fats">Fats: %s</string>
+    <string name="carbos">Carbos: %s</string>
+    <string name="time">Cooking times: %s mins.</string>
+    <string name="difficult">Difficulty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calories_hint">Enter calories</string>
+    <string name="carbos_hint">Enter carbos</string>
+    <string name="description_hint">Enter a description</string>
+    <string name="difficulty_hint">Enter difficulty</string>
+    <string name="fats_hint">Enter fats</string>
+    <string name="headline_hint">Enter headline</string>
+    <string name="name_hint">Enter name</string>
+    <string name="proteins_hint">Enter proteins</string>
+    <string name="time_hint">Enter cooking times</string>
+    <string name="add_recipe">Add recipe</string>
+</resources>

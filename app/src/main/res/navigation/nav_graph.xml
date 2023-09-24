@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recipesFragment">
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.softcentertest.fragments.RecipesFragment"
+        android:label="fragment_list_recipes"
+        tools:layout="@layout/fragment_list_recipes" >
+        <action
+            android:id="@+id/action_recipesFragment_to_detailRecipeFragment"
+            app:destination="@id/detailRecipeFragment" />
+        <action
+            android:id="@+id/action_recipesFragment_to_addRecipeFragment"
+            app:destination="@id/addRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRecipeFragment"
+        android:name="com.example.softcentertest.fragments.DetailRecipeFragment"
+        android:label="fragment_detail_recipe"
+        tools:layout="@layout/fragment_detail_recipe" >
+        <action
+            android:id="@+id/action_detailRecipeFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+        <argument android:name="recipe"
+            app:argType="com.example.softcentertest.retrofit.Recipe" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.example.softcentertest.fragments.AddRecipeFragment"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" >
+        <action
+            android:id="@+id/action_addRecipeFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </fragment>
+</navigation>

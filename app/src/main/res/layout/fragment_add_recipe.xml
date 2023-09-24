@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.AddRecipeFragment">
+
+
+
+    <EditText
+        android:id="@+id/calories_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/calories_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/carbos_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/carbos_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/calories_et"
+        app:layout_constraintStart_toStartOf="@+id/calories_et"
+        app:layout_constraintTop_toBottomOf="@+id/calories_et" />
+
+    <EditText
+        android:id="@+id/descr_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/description_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/carbos_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/carbos_et"
+        app:layout_constraintTop_toBottomOf="@+id/carbos_et" />
+
+    <EditText
+        android:id="@+id/difficulty_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/difficulty_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/descr_et"
+        app:layout_constraintStart_toStartOf="@+id/descr_et"
+        app:layout_constraintTop_toBottomOf="@+id/descr_et" />
+
+    <EditText
+        android:id="@+id/fats_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/fats_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/difficulty_et"
+        app:layout_constraintStart_toStartOf="@+id/difficulty_et"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_et" />
+
+    <EditText
+        android:id="@+id/headline_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/headline_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/fats_et"
+        app:layout_constraintStart_toStartOf="@+id/fats_et"
+        app:layout_constraintTop_toBottomOf="@+id/fats_et" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/headline_et"
+        app:layout_constraintStart_toStartOf="@+id/headline_et"
+        app:layout_constraintTop_toBottomOf="@+id/headline_et"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/cooking_times_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/time_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/name_et"
+        app:layout_constraintStart_toStartOf="@+id/name_et"
+        app:layout_constraintTop_toBottomOf="@+id/name_et" />
+
+    <Button
+        android:id="@+id/add_to_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/proteinsEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/proteins_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/cooking_times_et"
+        app:layout_constraintStart_toStartOf="@+id/cooking_times_et"
+        app:layout_constraintTop_toBottomOf="@+id/cooking_times_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
